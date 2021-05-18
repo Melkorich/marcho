@@ -1,8 +1,8 @@
- @import 'vars';
- @import 'fonts';
- @import 'reset';
- @import 'libs';
- @import 'global';
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
 
 
 .header {
@@ -126,9 +126,6 @@ footer {
   &__text {
     margin-bottom: 25px;
   }
-  &__form {
-
-  }
   &__form-input {
     background-color: #fff;
     max-width: 320px;
@@ -144,6 +141,7 @@ footer {
   &__form-btn {
   @extend %btn;
   border: none;
+  }
 }
 
 .footer-bottom {
@@ -162,6 +160,11 @@ footer {
 .top-slider {
   background-color: $bg;
   padding-top: 65px;
+  padding-bottom: 44px;
+  background-image: url('../images/slider/slider-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   &__container {
     max-width: 1560px;
   }
@@ -170,7 +173,7 @@ footer {
     padding-top: 125px;
   }
   &__item {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
   }
   &__title {
@@ -179,6 +182,7 @@ footer {
     line-height: 68px;
     color: $title;
     @extend %roboto-700;
+    margin-bottom: 35px;
   }
   &__text {
     margin-bottom: 55px;
@@ -188,11 +192,45 @@ footer {
     @extend %btn;
     padding: 14px 36px;
   }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+    li{
+      padding: 0 5px;
+      line-height: 0;
+      button{
+        padding: 0;
+        font-size: 0;
+        background-color: transparent;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        position: relative;
+        &::before {
+          content:'';
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: $accent;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      &.slick-active {
+        button {
+          border-color: $accent;
+          &::before{
+            background-color: $accent;
+          }
+        }
+      }
+    }
+  }
 }
-
-
-
-
-
 
 @import 'media';
