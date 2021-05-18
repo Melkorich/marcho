@@ -1,6 +1,7 @@
  @import 'vars';
  @import 'fonts';
  @import 'reset';
+ @import 'libs';
  @import 'global';
 
 
@@ -141,13 +142,8 @@ footer {
     }
   }
   &__form-btn {
-    border:none;
-    background-color: $accent;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 12px 26px;
-    box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
-  }
+  @extend %btn;
+  border: none;
 }
 
 .footer-bottom {
@@ -163,10 +159,40 @@ footer {
   }
 }
  
+.top-slider {
+  background-color: $bg;
+  padding-top: 65px;
+  &__container {
+    max-width: 1560px;
+  }
+  &__content {
+    padding-left: 175px;
+    padding-top: 125px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    max-width: 670px;
+    font-size: 58px;
+    line-height: 68px;
+    color: $title;
+    @extend %roboto-700;
+  }
+  &__text {
+    margin-bottom: 55px;
+    max-width: 470px;
+  }
+  &__link {
+    @extend %btn;
+    padding: 14px 36px;
+  }
+}
 
 
 
 
 
 
- @import 'media';
+@import 'media';
