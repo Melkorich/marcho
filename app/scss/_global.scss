@@ -26,4 +26,5 @@ a {
   color: $default;
   font-size: 16px;
   line-height: 26px;
+  @extend %quicksand-500;
 }
