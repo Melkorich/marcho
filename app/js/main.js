@@ -4,4 +4,12 @@ $(function(){
     arrows: false,
     fade: true
   });
+
+  $(".star").rateYo({
+    starWidth: "17",
+    normalFill: "#ccccce",
+    ratedFill: "#ffc35b",
+    readOnly: true,
+
+  });
 });
