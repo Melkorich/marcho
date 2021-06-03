@@ -130,7 +130,7 @@
               <span>Review:</span>
               Lorem ipsum dolor sit amet, consectetur adipscg elit, sed do eiusmod tempor incididunt ut laborea et dolore magna alqua. Quis ipsum suspendssem moa ultrices gravida.
             </p>
-            <form class="product-one__form product-filter" action="#">
+            <form class="product-one-form__product-filter" action="#">
 
               <div class="product-filter__color">
                 <div class="product-filter__color-title">
@@ -273,8 +273,20 @@
                           </g>
                           </svg>
                       </a>
-                      <a href="#"></a>
-                      <a href="#"></a>
+                      <a class="product-info__link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15pt" height="16pt" viewBox="0 0 15 16" version="1.1">
+                          <g>
+                          <path d="M 3.359375 14 L 0.246094 14 L 0.246094 4.652344 L 3.359375 4.652344 Z M 1.800781 3.378906 C 0.804688 3.378906 0 2.609375 0 1.679688 C 0 0.753906 0.804688 0 1.800781 0 C 2.796875 0 3.601562 0.753906 3.601562 1.679688 C 3.601562 2.609375 2.796875 3.378906 1.800781 3.378906 Z M 14.996094 14 L 11.894531 14 L 11.894531 9.449219 C 11.894531 8.367188 11.871094 6.976562 10.277344 6.976562 C 8.660156 6.976562 8.410156 8.152344 8.410156 9.371094 L 8.410156 14 L 5.304688 14 L 5.304688 4.652344 L 8.289062 4.652344 L 8.289062 5.929688 L 8.332031 5.929688 C 8.746094 5.195312 9.761719 4.417969 11.273438 4.417969 C 14.421875 4.417969 15 6.351562 15 8.867188 L 15 14 Z M 14.996094 14 "/>
+                          </g>
+                          </svg>
+                      </a>
+                      <a class="product-info__link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13pt" height="16pt" viewBox="0 0 13 16" version="1.1">
+                          <g>
+                          <path d="M 6.90625 0.203125 C 3.433594 0.203125 0 2.339844 0 5.800781 C 0 8 1.339844 9.25 2.152344 9.25 C 2.488281 9.25 2.679688 8.386719 2.679688 8.144531 C 2.679688 7.851562 1.878906 7.234375 1.878906 6.023438 C 1.878906 3.511719 3.949219 1.730469 6.632812 1.730469 C 8.9375 1.730469 10.644531 2.941406 10.644531 5.164062 C 10.644531 6.820312 9.921875 9.933594 7.585938 9.933594 C 6.742188 9.933594 6.023438 9.371094 6.023438 8.566406 C 6.023438 7.382812 6.917969 6.242188 6.917969 5.023438 C 6.917969 2.953125 3.738281 3.328125 3.738281 5.828125 C 3.738281 6.351562 3.808594 6.933594 4.0625 7.414062 C 3.59375 9.269531 2.640625 12.035156 2.640625 13.945312 C 2.640625 14.539062 2.730469 15.117188 2.792969 15.710938 C 2.90625 15.828125 2.851562 15.816406 3.027344 15.757812 C 4.734375 13.601562 4.671875 13.179688 5.445312 10.355469 C 5.859375 11.085938 6.9375 11.480469 7.789062 11.480469 C 11.386719 11.480469 13 8.246094 13 5.332031 C 13 2.226562 10.09375 0.203125 6.90625 0.203125 Z M 6.90625 0.203125 "/>
+                          </g>
+                          </svg>
+                      </a>
                     </div>
                   </li>
                 </ul>
@@ -288,10 +300,285 @@
           </div>
         </div>
       </div>
-      <div class="product-tabs">
 
+      <div class="product-tabs">
+        <div class="product-tabs__top">
+          <a class="product-tabs__top-item product-tabs__top-item--active" href="#tab-1">
+            Description
+          </a>
+          <a class="product-tabs__top-item" href="#tab-2">
+            Additional information
+          </a>
+          <a class="product-tabs__top-item" href="#tab-3">
+            Reviews
+          </a>
+        </div>
+        <div class="product-tabs__content">
+          <div class="product-tabs__content-item" id="tab-1">
+            content 1
+          </div>
+          <div class="product-tabs__content-item" id="tab-2">
+            content 2
+          </div>
+          <div class="product-tabs__content-item product-tabs__content-item--active" id="tab-3">
+            <div class="comments">
+              <img class="comments__img" src="images/avatar/1.jpg" alt="avatar">
+              <div class="comments__content">
+                <div class="comments__content-top">
+                  <p class="comments__content-name">
+                    Michle Jhon
+                  </p>
+                  <p class="comments__content-date">2 days ago</p>
+                  <div class="star comments__content-star" data-rateyo-rating="4"></div>
+                </div>
+                <p class="comments__content-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan lacus vel facilisis. 
+                </p>
+                <a class="comments__content-reply" href="#">
+                  Reply
+                </a>
+              </div>
+            </div>
+            <div class="comments">
+              <img class="comments__img" src="images/avatar/2.jpg" alt="avatar">
+              <div class="comments__content">
+                <div class="comments__content-top">
+                  <p class="comments__content-name">
+                    Michle Jhon
+                  </p>
+                  <p class="comments__content-date">2 days ago</p>
+                  <div class="star comments__content-star" data-rateyo-rating="4"></div>
+                </div>
+                <p class="comments__content-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan lacus vel facilisis. 
+                </p>
+                <a class="comments__content-reply" href="#">
+                  Reply
+                </a>
+              </div>
+            </div>
+            <div class="comments">
+              <img class="comments__img" src="images/avatar/3.jpg" alt="avatar">
+              <div class="comments__content">
+                <div class="comments__content-top">
+                  <p class="comments__content-name">
+                    Michle Jhon
+                  </p>
+                  <p class="comments__content-date">2 days ago</p>
+                  <div class="star comments__content-star" data-rateyo-rating="4"></div>
+                </div>
+                <p class="comments__content-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan lacus vel facilisis. 
+                </p>
+                <a class="comments__content-reply" href="#">
+                  Reply
+                </a>
+              </div>
+            </div>
+
+            <form class="comments-form" action="#">
+              <p class="comments-form__title">
+                Add your review
+              </p>
+              <div class="comments-form__rating">
+                <span class="comments-form__rating-title">Your Rating</span>
+                <label class="comments-form__label">
+                  <input class="comments-form__input" type="radio" name="star">
+                  <span class="comments-form__radio">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="17pt" viewBox="0 0 18 17" version="1.1">
+                      <g id="surface1">
+                      <path  d="M 8.101562 0.589844 L 6.0625 4.988281 L 1.496094 5.695312 C 0.679688 5.820312 0.351562 6.894531 0.945312 7.507812 L 4.246094 10.925781 L 3.464844 15.757812 C 3.324219 16.632812 4.191406 17.285156 4.914062 16.878906 L 9 14.597656 L 13.085938 16.878906 C 13.808594 17.28125 14.675781 16.632812 14.535156 15.757812 L 13.753906 10.925781 L 17.054688 7.507812 C 17.648438 6.894531 17.320312 5.820312 16.503906 5.695312 L 11.9375 4.988281 L 9.898438 0.589844 C 9.53125 -0.191406 8.472656 -0.203125 8.101562 0.589844 Z M 8.101562 0.589844 "/>
+                      </g>
+                    </svg>
+                  </span>
+                </label>
+
+                <label class="comments-form__label">
+                  <input class="comments-form__input" type="radio" name="star">
+                  <span class="comments-form__radio">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="17pt" viewBox="0 0 18 17" version="1.1">
+                      <g id="surface1">
+                      <path  d="M 8.101562 0.589844 L 6.0625 4.988281 L 1.496094 5.695312 C 0.679688 5.820312 0.351562 6.894531 0.945312 7.507812 L 4.246094 10.925781 L 3.464844 15.757812 C 3.324219 16.632812 4.191406 17.285156 4.914062 16.878906 L 9 14.597656 L 13.085938 16.878906 C 13.808594 17.28125 14.675781 16.632812 14.535156 15.757812 L 13.753906 10.925781 L 17.054688 7.507812 C 17.648438 6.894531 17.320312 5.820312 16.503906 5.695312 L 11.9375 4.988281 L 9.898438 0.589844 C 9.53125 -0.191406 8.472656 -0.203125 8.101562 0.589844 Z M 8.101562 0.589844 "/>
+                      </g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="17pt" viewBox="0 0 18 17" version="1.1">
+                      <g id="surface1">
+                      <path  d="M 8.101562 0.589844 L 6.0625 4.988281 L 1.496094 5.695312 C 0.679688 5.820312 0.351562 6.894531 0.945312 7.507812 L 4.246094 10.925781 L 3.464844 15.757812 C 3.324219 16.632812 4.191406 17.285156 4.914062 16.878906 L 9 14.597656 L 13.085938 16.878906 C 13.808594 17.28125 14.675781 16.632812 14.535156 15.757812 L 13.753906 10.925781 L 17.054688 7.507812 C 17.648438 6.894531 17.320312 5.820312 16.503906 5.695312 L 11.9375 4.988281 L 9.898438 0.589844 C 9.53125 -0.191406 8.472656 -0.203125 8.101562 0.589844 Z M 8.101562 0.589844 "/>
+                      </g>
+                    </svg>
+                  </span>
+                </label>
+
+                <label class="comments-form__label">
+                  <input class="comments-form__input" type="radio" name="star">
+                  <span class="comments-form__radio">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="17pt" viewBox="0 0 18 17" version="1.1">
+                      <g id="surface1">
+                      <path  d="M 8.101562 0.589844 L 6.0625 4.988281 L 1.496094 5.695312 C 0.679688 5.820312 0.351562 6.894531 0.945312 7.507812 L 4.246094 10.925781 L 3.464844 15.757812 C 3.324219 16.632812 4.191406 17.285156 4.914062 16.878906 L 9 14.597656 L 13.085938 16.878906 C 13.808594 17.28125 14.675781 16.632812 14.535156 15.757812 L 13.753906 10.925781 L 17.054688 7.507812 C 17.648438 6.894531 17.320312 5.820312 16.503906 5.695312 L 11.9375 4.988281 L 9.898438 0.589844 C 9.53125 -0.191406 8.472656 -0.203125 8.101562 0.589844 Z M 8.101562 0.589844 "/>
+                      </g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="17pt" viewBox="0 0 18 17" version="1.1">
+                      <g id="surface1">
+                      <path  d="M 8.101562 0.589844 L 6.0625 4.988281 L 1.496094 5.695312 C 0.679688 5.820312 0.351562 6.894531 0.945312 7.507812 L 4.246094 10.925781 L 3.464844 15.757812 C 3.324219 16.632812 4.191406 17.285156 4.914062 16.878906 L 9 14.597656 L 13.085938 16.878906 C 13.808594 17.28125 14.675781 16.632812 14.535156 15.757812 L 13.753906 10.925781 L 17.054688 7.507812 C 17.648438 6.894531 17.320312 5.820312 16.503906 5.695312 L 11.9375 4.988281 L 9.898438 0.589844 C 9.53125 -0.191406 8.472656 -0.203125 8.101562 0.589844 Z M 8.101562 0.589844 "/>
+                      </g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="17pt" viewBox="0 0 18 17" version="1.1">
+                      <g id="surface1">
+                      <path  d="M 8.101562 0.589844 L 6.0625 4.988281 L 1.496094 5.695312 C 0.679688 5.820312 0.351562 6.894531 0.945312 7.507812 L 4.246094 10.925781 L 3.464844 15.757812 C 3.324219 16.632812 4.191406 17.285156 4.914062 16.878906 L 9 14.597656 L 13.085938 16.878906 C 13.808594 17.28125 14.675781 16.632812 14.535156 15.757812 L 13.753906 10.925781 L 17.054688 7.507812 C 17.648438 6.894531 17.320312 5.820312 16.503906 5.695312 L 11.9375 4.988281 L 9.898438 0.589844 C 9.53125 -0.191406 8.472656 -0.203125 8.101562 0.589844 Z M 8.101562 0.589844 "/>
+                      </g>
+                    </svg>
+                  </span>
+                </label>
+
+                <label class="comments-form__label">
+                  <input class="comments-form__input" type="radio" name="star">
+                  <span class="comments-form__radio">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="17pt" viewBox="0 0 18 17" version="1.1">
+                      <g id="surface1">
+                      <path  d="M 8.101562 0.589844 L 6.0625 4.988281 L 1.496094 5.695312 C 0.679688 5.820312 0.351562 6.894531 0.945312 7.507812 L 4.246094 10.925781 L 3.464844 15.757812 C 3.324219 16.632812 4.191406 17.285156 4.914062 16.878906 L 9 14.597656 L 13.085938 16.878906 C 13.808594 17.28125 14.675781 16.632812 14.535156 15.757812 L 13.753906 10.925781 L 17.054688 7.507812 C 17.648438 6.894531 17.320312 5.820312 16.503906 5.695312 L 11.9375 4.988281 L 9.898438 0.589844 C 9.53125 -0.191406 8.472656 -0.203125 8.101562 0.589844 Z M 8.101562 0.589844 "/>
+                      </g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="17pt" viewBox="0 0 18 17" version="1.1">
+                      <g id="surface1">
+                      <path  d="M 8.101562 0.589844 L 6.0625 4.988281 L 1.496094 5.695312 C 0.679688 5.820312 0.351562 6.894531 0.945312 7.507812 L 4.246094 10.925781 L 3.464844 15.757812 C 3.324219 16.632812 4.191406 17.285156 4.914062 16.878906 L 9 14.597656 L 13.085938 16.878906 C 13.808594 17.28125 14.675781 16.632812 14.535156 15.757812 L 13.753906 10.925781 L 17.054688 7.507812 C 17.648438 6.894531 17.320312 5.820312 16.503906 5.695312 L 11.9375 4.988281 L 9.898438 0.589844 C 9.53125 -0.191406 8.472656 -0.203125 8.101562 0.589844 Z M 8.101562 0.589844 "/>
+                      </g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="17pt" viewBox="0 0 18 17" version="1.1">
+                      <g id="surface1">
+                      <path  d="M 8.101562 0.589844 L 6.0625 4.988281 L 1.496094 5.695312 C 0.679688 5.820312 0.351562 6.894531 0.945312 7.507812 L 4.246094 10.925781 L 3.464844 15.757812 C 3.324219 16.632812 4.191406 17.285156 4.914062 16.878906 L 9 14.597656 L 13.085938 16.878906 C 13.808594 17.28125 14.675781 16.632812 14.535156 15.757812 L 13.753906 10.925781 L 17.054688 7.507812 C 17.648438 6.894531 17.320312 5.820312 16.503906 5.695312 L 11.9375 4.988281 L 9.898438 0.589844 C 9.53125 -0.191406 8.472656 -0.203125 8.101562 0.589844 Z M 8.101562 0.589844 "/>
+                      </g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="17pt" viewBox="0 0 18 17" version="1.1">
+                      <g id="surface1">
+                      <path  d="M 8.101562 0.589844 L 6.0625 4.988281 L 1.496094 5.695312 C 0.679688 5.820312 0.351562 6.894531 0.945312 7.507812 L 4.246094 10.925781 L 3.464844 15.757812 C 3.324219 16.632812 4.191406 17.285156 4.914062 16.878906 L 9 14.597656 L 13.085938 16.878906 C 13.808594 17.28125 14.675781 16.632812 14.535156 15.757812 L 13.753906 10.925781 L 17.054688 7.507812 C 17.648438 6.894531 17.320312 5.820312 16.503906 5.695312 L 11.9375 4.988281 L 9.898438 0.589844 C 9.53125 -0.191406 8.472656 -0.203125 8.101562 0.589844 Z M 8.101562 0.589844 "/>
+                      </g>
+                    </svg>
+                  </span>
+                </label>
+
+                <label class="comments-form__label">
+                  <input class="comments-form__input" type="radio" name="star" checked>
+                  <span class="comments-form__radio">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="17pt" viewBox="0 0 18 17" version="1.1">
+                      <g id="surface1">
+                      <path  d="M 8.101562 0.589844 L 6.0625 4.988281 L 1.496094 5.695312 C 0.679688 5.820312 0.351562 6.894531 0.945312 7.507812 L 4.246094 10.925781 L 3.464844 15.757812 C 3.324219 16.632812 4.191406 17.285156 4.914062 16.878906 L 9 14.597656 L 13.085938 16.878906 C 13.808594 17.28125 14.675781 16.632812 14.535156 15.757812 L 13.753906 10.925781 L 17.054688 7.507812 C 17.648438 6.894531 17.320312 5.820312 16.503906 5.695312 L 11.9375 4.988281 L 9.898438 0.589844 C 9.53125 -0.191406 8.472656 -0.203125 8.101562 0.589844 Z M 8.101562 0.589844 "/>
+                      </g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="17pt" viewBox="0 0 18 17" version="1.1">
+                      <g id="surface1">
+                      <path d="M 8.101562 0.589844 L 6.0625 4.988281 L 1.496094 5.695312 C 0.679688 5.820312 0.351562 6.894531 0.945312 7.507812 L 4.246094 10.925781 L 3.464844 15.757812 C 3.324219 16.632812 4.191406 17.285156 4.914062 16.878906 L 9 14.597656 L 13.085938 16.878906 C 13.808594 17.28125 14.675781 16.632812 14.535156 15.757812 L 13.753906 10.925781 L 17.054688 7.507812 C 17.648438 6.894531 17.320312 5.820312 16.503906 5.695312 L 11.9375 4.988281 L 9.898438 0.589844 C 9.53125 -0.191406 8.472656 -0.203125 8.101562 0.589844 Z M 8.101562 0.589844 "/>
+                      </g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="17pt" viewBox="0 0 18 17" version="1.1">
+                      <g id="surface1">
+                      <path d="M 8.101562 0.589844 L 6.0625 4.988281 L 1.496094 5.695312 C 0.679688 5.820312 0.351562 6.894531 0.945312 7.507812 L 4.246094 10.925781 L 3.464844 15.757812 C 3.324219 16.632812 4.191406 17.285156 4.914062 16.878906 L 9 14.597656 L 13.085938 16.878906 C 13.808594 17.28125 14.675781 16.632812 14.535156 15.757812 L 13.753906 10.925781 L 17.054688 7.507812 C 17.648438 6.894531 17.320312 5.820312 16.503906 5.695312 L 11.9375 4.988281 L 9.898438 0.589844 C 9.53125 -0.191406 8.472656 -0.203125 8.101562 0.589844 Z M 8.101562 0.589844 "/>
+                      </g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="17pt" viewBox="0 0 18 17" version="1.1">
+                      <g id="surface1">
+                      <path style=" stroke:none;" d="M 8.101562 0.589844 L 6.0625 4.988281 L 1.496094 5.695312 C 0.679688 5.820312 0.351562 6.894531 0.945312 7.507812 L 4.246094 10.925781 L 3.464844 15.757812 C 3.324219 16.632812 4.191406 17.285156 4.914062 16.878906 L 9 14.597656 L 13.085938 16.878906 C 13.808594 17.28125 14.675781 16.632812 14.535156 15.757812 L 13.753906 10.925781 L 17.054688 7.507812 C 17.648438 6.894531 17.320312 5.820312 16.503906 5.695312 L 11.9375 4.988281 L 9.898438 0.589844 C 9.53125 -0.191406 8.472656 -0.203125 8.101562 0.589844 Z M 8.101562 0.589844 "/>
+                      </g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="17pt" viewBox="0 0 18 17" version="1.1">
+                      <g id="surface1">
+                      <path style=" stroke:none;" d="M 8.101562 0.589844 L 6.0625 4.988281 L 1.496094 5.695312 C 0.679688 5.820312 0.351562 6.894531 0.945312 7.507812 L 4.246094 10.925781 L 3.464844 15.757812 C 3.324219 16.632812 4.191406 17.285156 4.914062 16.878906 L 9 14.597656 L 13.085938 16.878906 C 13.808594 17.28125 14.675781 16.632812 14.535156 15.757812 L 13.753906 10.925781 L 17.054688 7.507812 C 17.648438 6.894531 17.320312 5.820312 16.503906 5.695312 L 11.9375 4.988281 L 9.898438 0.589844 C 9.53125 -0.191406 8.472656 -0.203125 8.101562 0.589844 Z M 8.101562 0.589844 "/>
+                      </g>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+
+              <div class="comments-form__box-input">
+                <input class="comments-form__text-input" placeholder="Your name" type="text">
+                <input class="comments-form__text-input" placeholder="E-mail address" type="text">
+              </div>
+              <textarea class="comments-form__textarea" placeholder="Your text here"></textarea>
+              <button class="comments-form__btn" type="submit">
+                Leave Review
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="product-reviews">
+    </div>
+  </section>
+
+  <section class="related">
+    <div class="container">
+      <h3 class="title related__title">RELATED PRODUCTS</h3>
+      <div class="related__items">
+
+        <div class="product-item">
+          <div class="product-item__img-box">
+            <img class="product-item__images" src="images/product/1.jpg" alt="product">
+          </div>
+          <div class="product-item__wrapper-box">
+            <div class="product-item__box">
+              <div class="star" data-rateyo-rating="4"></div>
+              <h4 class="product-item__title">
+                White Polo Men’s T-Shirt
+              </h4>
+              <div class="product-item__price">
+                <div class="product-item__new-price">$34.00</div>
+                <div class="product-item__old-price">$27.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item product-item--sale">
+          <div class="product-item__img-box">
+            <img class="product-item__images" src="images/product/2.jpg" alt="product">
+          </div>
+          <div class="product-item__wrapper-box">
+            <div class="product-item__box">
+              <div class="star" data-rateyo-rating="3"></div>
+              <h4 class="product-item__title">
+                White Polo Men’s T-Shirt
+              </h4>
+              <div class="product-item__price">
+                <div class="product-item__new-price">$34.00</div>
+                <div class="product-item__old-price">$27.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <div class="product-item__img-box">
+            <img class="product-item__images" src="images/product/3.jpg" alt="product">
+          </div>
+          <div class="product-item__wrapper-box">
+            <div class="product-item__box">
+              <div class="star" data-rateyo-rating="4"></div>
+              <h4 class="product-item__title">
+                White Polo Men’s T-Shirt
+              </h4>
+              <div class="product-item__price">
+                <div class="product-item__new-price">$34.00</div>
+                <div class="product-item__old-price">$27.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <div class="product-item__img-box">
+            <img class="product-item__images" src="images/product/4.jpg" alt="product">
+          </div>
+          <div class="product-item__wrapper-box">
+            <div class="product-item__box">
+              <div class="star" data-rateyo-rating="4"></div>
+              <h4 class="product-item__title">
+                White Polo Men’s T-Shirt
+              </h4>
+              <div class="product-item__price">
+                <div class="product-item__new-price">$34.00</div>
+                <div class="product-item__old-price">$27.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
